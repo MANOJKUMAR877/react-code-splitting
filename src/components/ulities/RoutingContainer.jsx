@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import TakeMeToChartButoon from "../component/TakeMeToChartButoon";
+import TakeMeToChartButoon from "../Pages/TakeMeToChartButoon";
 import LineCharts from "../Chart/LineCharts";
-import PageNotFound from "../component/PageNotFound";
+import PageNotFound from "../Pages/PageNotFound";
 export default class RoutingContainer extends Component {
   render() {
     return (

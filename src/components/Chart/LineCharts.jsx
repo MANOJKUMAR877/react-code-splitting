@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import apiFetch from "../ApiContainer/fetchApi";
-import Loading from "../component/Loading";
+import apiFetch from "../ulities/fetchApi";
+import Loading from "../Pages/Loading";
 import {
   LineChart,
   Line,
@@ -34,14 +34,13 @@ export default class LineCharts extends Component {
             height={700}
             data={this.state.data.data}
             margin={{ top: 55, right: 30, left: 120, bottom: 5 }}
-            
           >
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis padding={{ left: 20 }} domain={[0, 50]} />
             <YAxis type="number" domain={[25, 100]} />
-            <Tooltip  />
+            <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey="data_error" stroke="#8884d8"  />
+            <Line type="monotone" dataKey="data_error" stroke="#8884d8" />
             <Line type="monotone" dataKey="incoming_data" stroke="#82ca9d" />
           </LineChart>
         )}

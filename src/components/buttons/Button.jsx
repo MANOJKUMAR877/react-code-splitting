@@ -1,7 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "./button.css";
-export default class Button extends Component {
-  render() {
-    return <div className="button" data-testid="button">{this.props.label}</div>;
+function Button(props) {
+ 
+    return (
+      <div className="button" data-testid="button">
+        {props.label}
+      </div>
+    );
   }
-}
+export default Button
